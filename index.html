@@ -1,35 +1,35 @@
 <!doctype html>
 <html lang="en">
 
-	<head>
-		<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
 
-		<title>Du code pour les humains</title>
+	<title>Du code pour les humains</title>
 
-		<meta name="description" content="Présentation faite pour l'INRIA">
-		<meta name="author" content="Jean-Baptiste Dusseaut">
+	<meta name="description" content="Présentation faite pour l'INRIA">
+	<meta name="author" content="Jean-Baptiste Dusseaut">
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/night.css" id="theme">
+	<link rel="stylesheet" href="css/reveal.min.css">
+	<link rel="stylesheet" href="css/theme/night.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- For syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
-				link.href = 'css/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
-		</script>
+	<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+	<script>
+		if( window.location.search.match( /print-pdf/gi ) ) {
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = 'css/print/pdf.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		}
+	</script>
 
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
@@ -61,73 +61,81 @@
 					<section data-background="images/quality.jpg">
 						<h2>Le mantra</h2>
 						<h1>
-								Qualité d'aujourd'hui == Productivité de demain
-							</h1>
+							Qualité d'aujourd'hui == Productivité de demain
+						</h1>
 					</section>
 				</section>
 				<section>
-						<section>
-							<h2>Qualité ?</h2>
-							<p>
-								<img src="images/wtf.png" alt="" />
-							</p>
-						</section>
-						<section>
-							<h1>Les commentaires ne sont pas de la qualité</h1>
-							<h2>mais un aveu d'échec</h2>
-						</section>
-						<section>
-							<h2>Quatre règles</h2>
-							<p>
-								<ul>
-									<li>Passer les tests unitaires</li>
-									<li>Pas de duplication</li>
-									<li>Porter son intention</li>
-									<li>Minimiser ses éléments</li>
-								</ul>
-							</p>
-							<p>
-								<small>Kent Beck</small>
-							</p>
-						</section>
-						<section>
-							<h2>Deux disciplines jumelles</h2>
-							<p>
-								<ul>
-									<li>Test Driven Development</li>
-									<li>Refactoring</li>
-								</ul>
-							</p>
-						</section>
+					<section>
+						<h2>Qualité ?</h2>
+						<p>
+							<img src="images/wtf.png" alt="" />
+						</p>
+					</section>
+					<section>
+						<h2>Quatre règles</h2>
+						<p>
+							<ul>
+								<li>Passer les tests unitaires</li>
+								<li>Pas de duplication</li>
+								<li>Porter son intention</li>
+								<li>Minimiser ses éléments</li>
+							</ul>
+						</p>
+						<p>
+							<small>Kent Beck</small>
+						</p>
+					</section>
+					<section>
+						<h2>Deux disciplines jumelles</h2>
+						<p>
+							<ul>
+								<li>Test Driven Development</li>
+								<li>Refactoring</li>
+							</ul>
+						</p>
+					</section>
 				</section>
 				<section>
 					<h2>TDD</h2>
 					<ol>
-						<li>Interdiction d'écrire de code de production, à moins de faire passer un test au vert</li>
-						<li>Interdiction d'écrire plus de code de test qu'il ne faut pour qu'il ne soit rouge. La compilation que ne passe pas
-						est un test rouge</li>
-						<li>Interdiction d'écrire plus de code de production qu'il ne faut pour faire passer un test qui était rouge, au vert</li>
-					</ol>
-				</section>
-				<section>
-					<h2>Refactoring</h2>
-					<p>
-						Changer la structure interne sans changer le comportement externe.
-					</p>
-				</section>
-				<section>
-					<h2>En vrac</h2>
-					<p>
-						code smells, emergent design, pair programming, real options, ddd, bounding context, specification by exemple, impact mapping,
-						iteration, SOLID, clean code, clean architecture, clean coders, continuous integration, continuous delivery, DevOps.
-					</p>
-				</section>
-		</div>
+						<li class="fragment">Interdiction d'écrire de code de production, à moins de faire passer un test au vert</li>
+						<li class="fragment">Interdiction d'écrire plus de code de test qu'il ne faut pour qu'il ne soit rouge. La compilation que ne passe pas
+							est un test rouge</li>
+							<li class="fragment">Interdiction d'écrire plus de code de production qu'il ne faut pour faire passer un test qui était rouge, au vert</li>
+						</ol>
+					</section>
+					<section>
+						<section>
+							<h2>Refactoring</h2>
+							<p>
+								Changer la structure interne sans changer le comportement externe.
+							</p>
+						</section>
+						<section>
+							<img class="stretch" src="images/spaghetti.jpg" alt=""/>
+						</section>
+						<section>
+							<img src="images/design.jpg" alt="" class="stretch">
+						</section>
+					</section> 
 
-		<script src="lib/js/head.min.js"></script>
-		<script src="js/reveal.min.js"></script>
+					<section data-background="images/mantra.jpg">
 
-		<script>
+					</section>
+					<section>
+						<h2>En vrac</h2>
+						<p>
+							code smells, emergent design, pair programming, real options, ddd, bounding context, specification by exemple, impact mapping,
+							iteration, SOLID, clean code, clean architecture, clean coders, continuous integration, continuous delivery, DevOps.
+						</p>
+					</section>
+				</div>
+
+				<script src="lib/js/head.min.js"></script>
+				<script src="js/reveal.min.js"></script>
+
+				<script>
 
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -146,16 +154,16 @@
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+				{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
 				]
 			});
 
-		</script>
+</script>
 
-	</body>
+</body>
 </html>
